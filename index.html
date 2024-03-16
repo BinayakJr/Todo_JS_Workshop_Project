@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="mainContainer">
+
+        <div class="heading">
+            <h1>Todo List App</h1>
+        </div>
+
+        <div class="addTodo">
+            <input type="text" name="todoInput" id="todoInput" placeholder="Enter Todo">
+            <button type="submit" id="btn" onclick="addTask()">Add</button>
+        </div>
+
+        <div class="searchInput">
+            <input type="text" name="searchInput" id="searchInput" placeholder="Search Todo">
+            <button type="search" id="btn" onclick="filterTasks()">
+                &nbsp;<i class="fa-solid fa-magnifying-glass"></i>&nbsp;
+            </button>
+        </div>
+
+        <ul id="todoList"></ul>
+
+        <div class="tasks">
+            <p>Total Tasks : <span id="totalTasks">0</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Completed Tasks : <span id="completedTasks">0</span></p>
+        </div>
+
+        <div class="copyright">&#169; Developed by <span id="binayakBhandari"><a href="https://binayakbhandari.com.np">Binayak Bhandari</a></span><br>
+            Taught by <span id="digitalPathshala"><a href="https://digitalpathshalanepal.com/">Digital Pathshala</a> </span>
+
+
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/b5d38cfb87.js" crossorigin="anonymous"></script>
+</body>
+</html>
